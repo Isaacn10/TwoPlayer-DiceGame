@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Black Ops One', cursive;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ce5937;
+  background: -moz-linear-gradient(left, #ce5937 0%, #1c6ea4 50%, #c59237 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #ce5937 0%,
+    #1c6ea4 50%,
+    #c59237 100%
+  );
+  background: linear-gradient(to right, #ce5937 0%, #1c6ea4 50%, #c59237 100%);
+}
+
+main {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: -3px -1px 27px 5px rgba(0, 0, 0, 0.17);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  height: auto;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.gameplay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* Add relative position to the parent */
+}
+
+.player {
+  background: rgba(128, 128, 128, 0.258);
+  height: 200px;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-active {
+  background: rgba(0, 0, 0, 0.595);
+}
+
+.player-active .player-title {
+  color: white;
+}
+
+.player-active .scores {
+  background: rgba(255, 255, 255, 0.708);
+  color: black;
+}
+
+.player-title {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.dice-container {
+  position: absolute; /* Add absolute position to the dice container */
+  top: 35%;
+  left: 50%; /* Place the dice container in the middle */
+  transform: translateX(-50%); /* Center horizontally */
+  display: flex;
+  justify-content: space-around; /* Place dice on both sides */
+  align-items: center;
+  width: 100px; /* Adjust width as needed */
+}
+
+img {
+  max-width: 60px; /* Adjust size as needed */
+  box-shadow: -3px -1px 27px 5px rgba(0, 0, 0, 0.17);
+}
+
+.scores {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+  background: gray;
+  color: white;
+  border-radius: 10px;
+}
+
+.rounds-details {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.708);
+  box-shadow: -3px -1px 27px 5px rgba(0, 0, 0, 0.17);
+}
+
+.game-result {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.btn {
+  font-family: 'Black Ops One', cursive;
+  background-color: #3498db;
+  color: #ffffffc4;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #2980b9;
+}

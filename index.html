@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="gameplay">
+        <section class="player player-0 player-active">
+          <h2 class="player-title" id="playername-0">Player 1</h2>
+          <div class="scores">
+            <p class="score-label">Score</p>
+            <p class="score-count" id="playerscore-0">0</p>
+          </div>
+        </section>
+        <div class="dice-container">
+          <img src="dice-5.png" class="dice dice1" alt="" />
+          <img src="dice-6.png" class="dice dice2" alt="" />
+        </div>
+        <section class="player player-1">
+          <h2 class="player-title" id="playername-1">Player 2</h2>
+          <div class="scores">
+            <p class="score-label">Score</p>
+            <p class="score-count" id="playerscore-1">0</p>
+          </div>
+        </section>
+      </div>
+      <div class="rounds-details">
+        <p class="rounds">Rounds</p>
+        <p class="round-number">0</p>
+      </div>
+      <!-- The winner is based on how many rounds one -->
+      <div class="game-result"></div>
+      <button class="btn roll-button">🎲 Roll Dice</button>
+      <button class="btn newgame-button">🔄 Play Again</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
